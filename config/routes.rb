@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  resources :users, only: [:index, :show]
-
   devise_for :users
   get 'toppages/index'
+
+  resources :users, only: [:index, :show]
 
   root to: 'toppages#index'
 end
