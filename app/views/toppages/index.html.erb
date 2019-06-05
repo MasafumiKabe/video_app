@@ -1,5 +1,14 @@
-<div class="center jumbotron" id="toppage">
-  <div class="text-center">
-    <h1>好きなことして、生きていきたい。</h1>
+<% if user_signed_in? %>
+  <div class="row">
+    <div class="col-xs-8">
+      <h5>ログインしています (email: <%= current_user.email %>)</h5>
+    </div>
   </div>
-</div>
+<% else %>
+  <div class="center jumbotron">
+    <div class="text-center">
+      <h1>Video App</h1>
+      <%= link_to "Log in", new_user_session_path, class: "btn btn-lg btn-primary" %>
+    </div>
+  </div>
+<% end %>
