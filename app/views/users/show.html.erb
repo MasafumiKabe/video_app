@@ -2,3 +2,9 @@
   <h1><%= @user.name %></h1>
   <h1><%= @user.email %></h1>
 </div>
+
+<div class="row">
+  <div class="col-xs-8">
+    <%= render 'articles/articles', articles: @articles %>
+  </div>
+</div>
