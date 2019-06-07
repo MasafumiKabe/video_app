@@ -62,3 +62,5 @@ gem 'streamio-ffmpeg'
 
 gem 'rails_admin'
 gem 'cancancan'
+
+gem 'fog'
