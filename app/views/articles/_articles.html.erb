@@ -10,7 +10,9 @@
         </div>
         <div>
           <%= link_to article.title, article_path(article) %>
-          <%= link_to article.video, article_path(article) %>
+          <%= link_to article_path(article) do %>
+            <%= image_tag(article.video_url(:screenshot).to_s, id: "video", :alt => "screenshot") %>
+          <% end %>
         </div>
       </div>
     </li>

@@ -1,6 +1,8 @@
 <div class="row">
   <aside class="col-xs-8">
-    <%= %>
+    <%= link_to @article.video_url.to_s do %>
+      <%= image_tag(@article.video_url(:screenshot).to_s, id: "video", :alt => "screenshot") %>
+    <% end %>
     <%= @article.title %>
     <%= @article.description %>
     <div>
