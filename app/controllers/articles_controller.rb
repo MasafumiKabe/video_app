@@ -2,9 +2,9 @@ class ArticlesController < ApplicationController
   before_action :correct_user, only: [:destroy]
 
   def show
-    @user = User.find(params[:id])
     @article = Article.find(params[:id])
-    @articles = current_user.articles.order('created_at DESC').page(params[:page])
+    @articles = Article.order('created_at DESC').page(params[:page])
+    @user = @article.user
   end
 
   def new

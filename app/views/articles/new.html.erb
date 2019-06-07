@@ -3,7 +3,7 @@
     <%= form_for(@article) do |f| %>
       <div class="form-group">
         <%= f.text_area :title, class: 'form-control' %>
-        <%= f.file_field :video %>
+        <%= f.file_field :video, :accept => 'video/*' %>
         <%= f.text_area :description, class: 'form-control', rows: 5 %>
       </div>
       <%= f.submit 'Post', class: 'btn btn-primary btn-block' %>
