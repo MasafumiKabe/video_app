@@ -64,3 +64,5 @@ gem 'rails_admin'
 gem 'cancancan'
 
 gem 'fog'
+
+gem 'dotenv-rails'
