@@ -59,3 +59,6 @@ gem 'devise'
 
 gem 'carrierwave'
 gem 'streamio-ffmpeg'
+
+gem 'rails_admin'
+gem 'cancancan'
