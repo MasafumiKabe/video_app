@@ -1,8 +1,16 @@
 <% if user_signed_in? %>
   <div class="row">
-    <div class="col-xs-8">
-      <h5>ログインしています (<%= current_user.name %> : <%= current_user.email %>)</h5>
-      <%= link_to "新規投稿", new_article_path, class: 'btn btn-primary btn-block' %>
+    <div class="col-md-offset-2 col-md-8">
+      <div class="media">
+        <div class="media-body">
+          <h3>動画一覧</h3>
+        </div>
+        <div class="media-right">
+          <div class="post-btn">
+            <%= link_to "新規投稿", new_article_path, class: 'btn btn-primary btn-md' %>
+          </div>
+        </div>
+      </div>
       <%= render 'articles/articles', articles: @articles %>
     </div>
   </div>
