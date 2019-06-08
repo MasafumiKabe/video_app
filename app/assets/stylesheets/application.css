@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #2dc6ce;
+  border-color: #2dc6ce;
+}
+
+.jumbotron {
+  background-color: #fff;
+  color: #2dc6ce;
+}
+
+.btn {
+  background-color: #2dc6ce;
+  border-color: #2dc6ce;
+}
+.btn:hover {
+  background-color: #82e2e5;
+  border-color: #82e2e5;
+}
+.btn-danger {
+  background-color: red;
+  border-color: red;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.delete-btn {
+  margin-bottom: 50px;
+}
+.post-btn {
+  margin-bottom: 50px;
+}
