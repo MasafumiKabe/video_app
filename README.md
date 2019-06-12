@@ -1,24 +1,17 @@
-# README
+# VideoApp
+## 概要
+動画をアップロードし、アップロードした動画を閲覧することができる。
+動画の保存先はAWSのS2。
+## 言語とライブラリ
+```
+ruby (2.5.0)
+rails (5.1.7)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+'devise' # ログイン機能
+'carrierwave' # 動画アップロード機能
+'streamio-ffmpeg' # 動画のスクリーンショット作成機能
+'rails_admin' # 管理者画面
+'cancancan' # 管理者権限
+'fog' # S3連携
+'dotenv-rails' # 環境変数管理
+```
