@@ -1,16 +1,16 @@
 .navbar {
-  background-color: #2dc6ce;
-  border-color: #2dc6ce;
+  background-color: #04c4cc;
+  border-color: #04c4cc;
 }
 
 .jumbotron {
   background-color: #fff;
-  color: #2dc6ce;
+  color: #04c4cc;
 }
 
 .btn {
-  background-color: #2dc6ce;
-  border-color: #2dc6ce;
+  background-color: #04c4cc;
+  border-color: #04c4cc;
 }
 .btn:hover {
   background-color: #82e2e5;
