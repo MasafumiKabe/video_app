@@ -6,12 +6,16 @@
       <% end %>
     </div>
     <h3><%= @article.title %></h3>
-    <div>
+    <div class="article-desc">
       <%= @article.description %>
+    </div>
+    <div>
+      <img src="<%= gravatar_url(@article.user, size: 30) %>" alt="" class="img-circle">
+      <%= link_to @article.user.name, user_path(@article.user) %>
     </div>
     <div class="delete-btn">
       <% if current_user == @article.user %>
-        <%= link_to "Delete", @article, method: :delete, data: { confirm: "本当によろしいですか？" }, class: 'btn btn-danger btn-xs' %>
+        <%= link_to "動画を削除する", @article, method: :delete, data: { confirm: "本当によろしいですか？" }, class: 'btn btn-danger btn-xs' %>
       <% end %>
     </div>
   </aside>

@@ -39,8 +39,15 @@
 }
 
 .delete-btn {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .post-btn {
   margin-bottom: 50px;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+.article-desc {
+  margin-bottom: 5px;
 }
