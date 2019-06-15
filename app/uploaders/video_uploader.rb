@@ -42,6 +42,7 @@ class VideoUploader < CarrierWave::Uploader::Base
     end
   end
  
+  # スクリーンショットの撮影
   def screenshot
     tmpfile = File.join(File.dirname(current_path), "tmpfile")
  
